@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h2>BMI Calculator</h2>
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" placeholder="Enter your weight">
+        <select id="weightUnit">
+            <option value="kg" selected>Kg</option>
+            <option value="lbs">lbs</option>
+        </select><br>
+        <label for="height">Height:</label>
+        <input type="number" id="height" placeholder="Enter your height">
+        <select id="heightUnit">
+            <option value="m" selected>Meters</option>
+            <option value="cm">Centimeters</option>
+            <option value="in">Inches</option>
+        </select><br>
+        <input type="button" value="Calculate BMI" id="calculateBtn">
+        <input type="button" value="Reset" id="resetBtn">
+        <div id="result"></div>
+        <div id="bmiCategories">
+            <div class="category" id="underweight">Underweight</div>
+            <div class="category" id="normal">Normal weight</div>
+            <div class="category" id="overweight">Overweight</div>
+            <div class="category" id="obese">Obese</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
